@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" class="fs1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://*.supabase.co wss://*.supabase.co; style-src 'self'; img-src 'self' data:; base-uri 'self'; form-action 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0b3c5d">
+<title>Forgot password | Members</title>
+<link rel="stylesheet" href="assets/style.css?v=2">
+</head>
+<body data-page="forgot" data-title="forgotTitle">
+<a class="skip" href="#main" data-i18n="skip">Skip to main content</a>
+<header class="top">
+  <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span><span data-i18n="appName">Members</span></a>
+  <div class="ctrl">
+    <div class="langw"><label class="sr" for="lang" data-i18n="langLabel">Language</label><span class="lcode" aria-hidden="true"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="6.3"/><path d="M1.7 8h12.6M8 1.7c-3.2 3.6-3.2 9 0 12.6M8 1.7c3.2 3.6 3.2 9 0 12.6"/></g></svg><span id="lcodeT">EN</span></span><select id="lang"><option value="en" lang="en" selected>English</option><option value="zh-Hant" lang="zh-Hant">繁體中文</option><option value="zh-Hans" lang="zh-Hans">简体中文</option><option value="ja" lang="ja">日本語</option><option value="mi" lang="mi">Te reo Māori</option><option value="ko" lang="ko">한국어</option></select></div>
+    <div class="fs" role="group" aria-label="Text size" data-i18n-aria="fsLabel">
+      <button type="button" data-fs="0" aria-label="A−" aria-pressed="false">A−</button><button type="button" data-fs="1" aria-label="A" aria-pressed="true">A</button><button type="button" data-fs="2" aria-label="A+" aria-pressed="false">A+</button>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="card">
+<h1 data-i18n="forgotTitle">Forgot password</h1>
+<p data-i18n="forgotIntro"></p>
+<form id="f" novalidate>
+<label for="email" data-i18n="email">Email address</label>
+<input id="email" type="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" required>
+<button type="submit" id="submit" class="btn primary" data-i18n="forgotBtn">Send reset link</button>
+</form>
+<div id="msg" class="msg" aria-live="polite" hidden></div>
+<div class="links"><p><a href="login.html" data-i18n="loginLink">Back to login</a></p></div>
+</div>
+</main>
+<footer><a href="privacy.html" data-i18n="navPrivacy">Privacy statement</a></footer>
+<script src="assets/config.js?v=2"></script>
+<script src="assets/i18n.js?v=2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/dist/umd/supabase.js" integrity="sha384-TcHRA3zBbn+Lexh5n+Oil4guNPOS3rjNDpGRAN46u/s/mB2IZ50ceC6TYDU2yvgK" crossorigin="anonymous"></script>
+<script src="assets/app.js?v=2"></script>
+</body>
+</html>
